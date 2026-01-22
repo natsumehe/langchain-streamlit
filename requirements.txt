@@ -1,0 +1,13 @@
+# 最新的 LangChain 核心库
+langchain-core>=0.1.0
+langchain-community>=0.0.1
+# 如果需要使用 OpenAI (虽然我们这次用 Qwen，但一些依赖可能需要)
+langchain-openai>=0.0.1
+# 用于调用通义千问
+langchain-dashscope>=0.0.3 # 专门用于调用阿里云 DashScope 服务
+# Streamlit
+streamlit>=1.29.0
+# DuckDuckGo 搜索工具
+duckduckgo-search>=4.0.0
+# Pydantic (LangChain 依赖)
+pydantic>=2.0
