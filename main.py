@@ -1,12 +1,3 @@
-import streamlit as st
-from langchain_community.chat_models import ChatTongyi
-from langchain_community.tools import DuckDuckGoSearchRun
-from langchain_community.callbacks import StreamlitCallbackHandler
-from langchain.memory import ConversationBufferWindowMemory
-from langchain.agents import create_openai_functions_agent, AgentExecutor
-from langchain_core.prompts import MessagesPlaceholder, ChatPromptTemplate
-from langchain_community.chat_message_histories import StreamlitChatMessageHistory
-
 import os
 import subprocess
 import sys
@@ -17,6 +8,16 @@ try:
 except ImportError:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip"])
     subprocess.check_call([sys.executable, "-m", "pip", "install", "tiktoken"])
+
+import streamlit as st
+from langchain_community.chat_models import ChatTongyi
+from langchain_community.tools import DuckDuckGoSearchRun
+from langchain_community.callbacks import StreamlitCallbackHandler
+from langchain.memory import ConversationBufferWindowMemory
+from langchain.agents import create_openai_functions_agent, AgentExecutor
+from langchain_core.prompts import MessagesPlaceholder, ChatPromptTemplate
+from langchain_community.chat_message_histories import StreamlitChatMessageHistory
+
 
 # ================== 页面配置 =======================
 st.set_page_config(page_title='基于 Streamlit 的千问聊天机器人', layout='wide')
