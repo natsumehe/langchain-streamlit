@@ -1,14 +1,8 @@
-# 核心框架 - 建议使用 2025-2026 年的稳定版本
-langchain>=0.4.0
-langchain-core>=0.4.0
-langchain-community>=0.4.0
-
-# 阿里通义千问集成驱动
-langchain-dashscope>=0.1.0
-
-# UI 框架
-streamlit>=1.40.0
-
-# 工具类
-duckduckgo-search>=6.0.0
-pydantic>=2.10.0
+streamlit
+langchain==0.3.0
+langchain-community==0.3.0
+langchain-core==0.3.0
+langchain-openai
+dashscope
+duckduckgo-search
+pydantic
